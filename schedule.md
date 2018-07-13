@@ -2,17 +2,17 @@
 |-----------|------------------------------------------------|
 | ### Day 1 |                                                |
 | 9:00 AM   | Intro & Welcome                                |
-| 9:30 AM   | Salmon RNA-seq Experiment                      |
-| 11:00 AM  | Break                                          |
+| 10:00 AM  | Break                                          |
+| 10:30 AM  | Salmon RNA-seq Experiment                      |
 | 11:30 AM  | Repeat Processing w/ Scripted Steps            |
 | 12:30 PM  | Lunch                                          |
 | 2:00      | Batch Effects                                  |
 | 3:00      | Differential Expression Analysis               |
 | 3:30      | Break                                          |
-| 4:00      | Clustering                                     |
-| 4:45      | PLIER                                          |
-| 5:15      | End                                            |
-| 5:45      | Dinner                                         |
+| 3:45      | Clustering                                     |
+| 4:30      | PLIER                                          |
+| 5:00      | End                                            |
+| 5:30      | Dinner                                         |
 |           |                                                |
 | ### Day 2 |                                                |
 | 8:30      | Introduction to Day 2                          |
@@ -33,4 +33,5 @@
 | 10:30     | Break                                          |
 | 11:00     | Differential Expression w/ Other People's Data |
 | 12:00     | Putting your data into MultiPLIER              |
-| 1:00      | Boxed Lunches & Adjourn                        |
+| 1:00      | Interpretation & Wrap-up Discussion            |
+| 1:30      | Boxed Lunches & Adjourn                        |
