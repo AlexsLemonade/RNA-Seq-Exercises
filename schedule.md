@@ -1,7 +1,7 @@
 | Time      | Topic                                          |
 |-----------|------------------------------------------------|
 | ### Day 1 |                                                |
-| 9:00 AM   | Intro & Welcome                                |
+| 9:00 AM   | Intro & Welcome (install [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md); complete [post-install steps](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/README.md))                               |
 | 10:00 AM  | Break                                          |
 | 10:30 AM  | Salmon RNA-seq Experiment                      |
 | 11:30 AM  | Repeat Processing w/ Scripted Steps            |
