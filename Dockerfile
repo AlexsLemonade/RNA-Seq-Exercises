@@ -1,4 +1,4 @@
-# image: greenescientist/rna-seq-exercises
+# image: ccdl/training_rnaseq
 
 FROM rocker/tidyverse:3.4.3
 MAINTAINER ccdl@alexslemonade.org
