@@ -23,6 +23,9 @@ RUN R -e "BiocInstaller::biocLite('DESeq2')"
 RUN R -e "BiocInstaller::biocLite('qvalue')"
 RUN R -e "devtools::install_github('wgmao/PLIER', ref = 'a2d4a2aa343f9ed4b9b945c04326bebd31533d4d', dependencies = TRUE)"
 
+# FastQC
+RUN apt update && apt install -y fastqc
+
 
 # From Salmon Dockerfile (https://github.com/COMBINE-lab/salmon/blob/master/docker/Dockerfile)
 ENV PACKAGES git gcc make g++ cmake libboost-all-dev liblzma-dev libbz2-dev \
