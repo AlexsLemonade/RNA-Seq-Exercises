@@ -22,6 +22,13 @@ RUN R -e "BiocInstaller::biocLite('tximport')"
 RUN R -e "BiocInstaller::biocLite('DESeq2')"
 RUN R -e "BiocInstaller::biocLite('qvalue')"
 RUN R -e "devtools::install_github('wgmao/PLIER', ref = 'a2d4a2aa343f9ed4b9b945c04326bebd31533d4d', dependencies = TRUE)"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/rjson_0.2.20.tar.gz')"
+RUN R -e "BiocInstaller::biocLite('org.Hs.eg.db')"
+RUN R -e "BiocInstaller::biocLite('org.Dr.eg.db')"
+RUN R -e "BiocInstaller::biocLite('ComplexHeatmap')"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/ggpubr_0.1.7.tar.gz')"
+RUN R -e "devtools::install_github('const-ae/ggsignif', ref = 'aadd9d44a360fc35fc3aef4b0fcdfdb7e1768d27')"
+RUN R -e "BiocInstaller::biocLite('ConsensusClusterPlus')"
 
 # FastQC
 RUN apt update && apt install -y fastqc
