@@ -1,4 +1,7 @@
-## Refresher in R, RStudio
+## Houston CCDL Training
+
+Location: Northwestern Mutual. 1 Riverway, Suite 900, Houston TX
+Dates: 3/27/2019-3/29/2019
 
 | Time      | Topic                                          |
 |-----------|------------------------------------------------|
@@ -8,12 +11,6 @@
 | 10:15   | Introduction to R                                |
 | 11:00   | R Intermediate topics (including tidyverse)      |
 | 12:00 PM  | Lunch                                          |
-
-## Main workshop
-
-| Time      | Topic                                          |
-|-----------|------------------------------------------------|
-| ### Day 1 |                                                |
 | 1:00      | Run Salmon for RNA-seq [Salmon and QC](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/download_qc_quant.md), [Shell scripting for reproducibility](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/reproducibility_cmdline.md)            |
 | 2:00      | Data Diagnostics w/ a Gastric Cancer Dataset [tximport](https://alexslemonade.github.io/training-modules/RNA-seq/gastric_cancer_tximport.nb.html), [Exploratory Analyses](https://alexslemonade.github.io/training-modules/RNA-seq/gastric_cancer_exploratory.nb.html) |
 | 3:30      | Break                                          |
