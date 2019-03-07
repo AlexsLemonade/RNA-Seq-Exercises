@@ -19,6 +19,9 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 # Need this so Seurat will install
 RUN R -e "devtools::install_github('UCSF-TI/fake-hdf5r', ref = 'c23358f4dd8b8135b9c60792de441eca3d867eba')"
 
+# scater and scran need updated rlang
+RUN R -e "devtools::install_version('rlang', version = '0.2.0')"
+
 RUN apt update && apt install -y dirmngr curl bash
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && install2.r --error \
@@ -26,15 +29,19 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   rjson \
   ggpubr \
   Seurat \
+  colorspace \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
-  && R -e "BiocInstaller::biocLite(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus'), suppressUpdates = TRUE)"
+  && R -e "BiocInstaller::biocLite(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), suppressUpdates = TRUE)" 
+
 
 # Install R packages from github and urls
 # Need most updated version of tximport so AlevinQC will install later
 RUN R -e "devtools::install_github('mikelove/tximport', ref = 'b5b5fe11b0093b4b2784f982277b2aa66d2607f7')"
 RUN R -e "devtools::install_github('wgmao/PLIER', ref = '8fba7af2fbec9fd23a9ffcad913e4589990bde2f', dependencies = TRUE)"
 RUN R -e "devtools::install_github('const-ae/ggsignif', ref = 'aadd9d44a360fc35fc3aef4b0fcdfdb7e1768d27')"
-RUN R -e "devtools::install_github('csoneson/alevinQC', ref = '1fdf1c14b59eead3e239d7f99b607d59753e9420', dependencies = TRUE)"
+RUN R -e "devtools::install_github('csoneson/alevinQC', ref = '39ac022304ff53812e54d03cf4b6a0ab2838fe6a', dependencies = TRUE)"
+RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad047b68bb66c06cee927a4517d678', dependencies = TRUE)"
+
 
 # FastQC
 RUN apt update && apt install -y fastqc
