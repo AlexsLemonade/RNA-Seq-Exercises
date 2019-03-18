@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:3.4.3
+FROM rocker/tidyverse:3.5.1
 MAINTAINER ccdl@alexslemonade.org
 WORKDIR /rocker-build/
 
@@ -14,40 +14,37 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libmariadb-client-lgpl-dev \
   libpq-dev \
   libssh2-1-dev \
-  pandoc
-
-# Need this so Seurat will install
-RUN R -e "devtools::install_github('UCSF-TI/fake-hdf5r', ref = 'c23358f4dd8b8135b9c60792de441eca3d867eba')"
+  pandoc \
+  libmagick++-dev
 
 # scater and scran need updated rlang
-RUN R -e "devtools::install_version('rlang', version = '0.2.0')"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/rlang_0.3.1.tar.gz')"
 
 RUN apt update && apt install -y dirmngr curl bash
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && install2.r --error \
   --deps TRUE \
   rjson \
-  ggpubr \
-  Seurat \
-  colorspace \
-  && R -e "source('https://bioconductor.org/biocLite.R')" \
-  && R -e "BiocInstaller::biocLite(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), suppressUpdates = TRUE)" 
+  ggpubr
 
+RUN R -e "BiocManager::install(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'org.Mm.eg.db', 'org.Cf.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), update = FALSE)" 
 
 # Install R packages from github and urls
 # Need most updated version of tximport so AlevinQC will install later
 RUN R -e "devtools::install_github('mikelove/tximport', ref = 'b5b5fe11b0093b4b2784f982277b2aa66d2607f7')"
-RUN R -e "devtools::install_github('wgmao/PLIER', ref = '8fba7af2fbec9fd23a9ffcad913e4589990bde2f', dependencies = TRUE)"
+RUN R -e "devtools::install_github('wgmao/PLIER', ref = 'a2d4a2aa343f9ed4b9b945c04326bebd31533d4d', dependencies = TRUE)"
 RUN R -e "devtools::install_github('const-ae/ggsignif', ref = 'aadd9d44a360fc35fc3aef4b0fcdfdb7e1768d27')"
-RUN R -e "devtools::install_github('csoneson/alevinQC', ref = '39ac022304ff53812e54d03cf4b6a0ab2838fe6a', dependencies = TRUE)"
-RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad047b68bb66c06cee927a4517d678', dependencies = TRUE)"
+RUN R -e "devtools::install_github('csoneson/alevinQC', ref = '6ca73b1744cbd969036f80b7c7dddbe7d1cf99ee', dependencies = TRUE)"
 
+# colorblind friendly palettes
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/colorspace_1.4-0.tar.gz')"
+RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad047b68bb66c06cee927a4517d678', dependencies = TRUE)"
 
 # FastQC
 RUN apt update && apt install -y fastqc
 
 ENV PACKAGES git gcc make g++ libboost-all-dev liblzma-dev libbz2-dev \
-    ca-certificates zlib1g-dev curl unzip autoconf
+   ca-certificates zlib1g-dev curl unzip autoconf
 
 ENV SALMON_VERSION 0.12.0
 
