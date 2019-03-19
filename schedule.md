@@ -6,7 +6,7 @@ Dates: 3/27/2019-3/29/2019
 | Time      | Topic                                          |
 |-----------|------------------------------------------------|
 | ### Day 1 |                                                |
-| 9:00 AM   | Intro & Welcome (install [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md); complete [post-install steps](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/README.md), introduction to RStudio)
+| 9:00 AM   | Intro & Welcome ([Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md); [Prepare the RNA-seq Environment](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/README.md), introduction to RStudio)
 | 10:00   | Break                                            |
 | 10:15   | [Introduction to R](https://alexslemonade.github.io/training-modules/intro_to_R_tidyverse/01-intro_to_r.nb.html)                                |
 | 11:00   | [R Intermediate topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro_to_R_tidyverse/02-intro_to_tidyverse.nb.html)      |
