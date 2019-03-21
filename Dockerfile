@@ -25,7 +25,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && install2.r --error \
   --deps TRUE \
   rjson \
-  ggpubr
+  ggpubr \
+  Rtsne
 
 RUN R -e "BiocManager::install(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'org.Mm.eg.db', 'org.Cf.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), update = FALSE)" 
 
@@ -37,7 +38,7 @@ RUN R -e "devtools::install_github('const-ae/ggsignif', ref = 'aadd9d44a360fc35f
 RUN R -e "devtools::install_github('csoneson/alevinQC', ref = '6ca73b1744cbd969036f80b7c7dddbe7d1cf99ee', dependencies = TRUE)"
 
 # colorblind friendly palettes
-RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/colorspace_1.4-0.tar.gz')"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/colorspace/colorspace_1.4-0.tar.gz')"
 RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad047b68bb66c06cee927a4517d678', dependencies = TRUE)"
 
 # FastQC
