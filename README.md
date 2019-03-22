@@ -30,6 +30,13 @@ docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-houston
 transferred from the flash/hard drive, using the `CHANGE` button.
 ![Folder](screenshots/all-02-volume.png)
 
+*For Windows*: After you set `Volumes` you will may see a message in the
+lower right corner of your screen that asks if you would like to 'Share it'
+with Docker.
+Click the `Share it` button; it will ask for your credentials:  
+![Folder](screenshots/docker_permission_windows.png)  
+Enter your password and click `OK`.
+
 5. Navigate to RStudio window.
 
   - In a *Windows* or *Mac* in Kitematic, go to the `Settings` > `Hostname/Ports`
@@ -46,7 +53,6 @@ whatever you selected above (can also be accessed from the `Settings` >
 7. You should see a `kitematic/` folder in your `RStudio` Files panel. Click on it.
 If you do not see the training modules folders in the kitematic folder, raise
 your hand.
-
 
 ### If Kitematic doesn't work:
 
