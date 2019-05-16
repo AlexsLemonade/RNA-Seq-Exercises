@@ -8,8 +8,8 @@ Dates: 3/27/2019-3/29/2019
 | ### Day 1 |                                                |
 | 9:00 AM   | Intro & Welcome ([Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md); [Prepare the RNA-seq Environment](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/README.md), Introduction to RStudio)
 | 10:00   | Break                                            |
-| 10:15   | [Introduction to R](https://alexslemonade.github.io/training-modules/intro_to_R_tidyverse/01-intro_to_r.nb.html)                                |
-| 11:00   | [R Intermediate Topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro_to_R_tidyverse/02-intro_to_tidyverse.nb.html)      |
+| 10:15   | [Introduction to R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_r.nb.html)                                |
+| 11:00   | [R Intermediate Topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/02-intro_to_tidyverse.nb.html)      |
 | 12:00 PM  | Lunch                                          |
 | 1:00      | Run Salmon for RNA-seq [Salmon and QC](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/01-download_qc_quant.md), [Shell scripting for reproducibility](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/02-reproducibility_cmdline.md)            |
 | 2:00      | Data Diagnostics w/ a Gastric Cancer Dataset [tximport](https://alexslemonade.github.io/training-modules/RNA-seq/03-gastric_cancer_tximport.nb.html), [Exploratory Analyses](https://alexslemonade.github.io/training-modules/RNA-seq/04-gastric_cancer_exploratory.nb.html) |
