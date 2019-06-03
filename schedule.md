@@ -1,7 +1,7 @@
-## Houston CCDL Training
+## Chicago CCDL Training
 
-Location: Northwestern Mutual. 1 Riverway, Suite 900, Houston TX
-Dates: 3/27/2019-3/29/2019
+Location: 1 N Upper Wacker Dr, Chicago, Illinois 60606  
+Dates: 6/24/2019-6/26/2019
 
 | Time      | Topic                                          |
 |-----------|------------------------------------------------|
@@ -26,7 +26,7 @@ Dates: 3/27/2019-3/29/2019
 | 3:00      | Break                                          |
 | 3:30      | Machine Learning [Data Preparation](https://alexslemonade.github.io/training-modules/machine-learning/01-medulloblastoma_data_prep.nb.html), [Clustering](https://alexslemonade.github.io/training-modules/machine-learning/02-medulloblastoma_clustering.nb.html), [PLIER](https://alexslemonade.github.io/training-modules/machine-learning/03-medulloblastoma_PLIER.nb.html), [Differential PLIER LVs](https://alexslemonade.github.io/training-modules/machine-learning/04-medulloblastoma_LV_differences.nb.html)  
 | 5:00      | End                                            |
-| 6:00      | Dinner at [El Tiempo Washington](http://www.eltiempocantina.com/washington/)                                       |
+| 6:00      | Dinner at TBD                                  |
 |           |                                                |
 | ### Day 3 |                                                |
 | 9:00 AM   | Analyze your own data (or some stuff we have)!                         |
