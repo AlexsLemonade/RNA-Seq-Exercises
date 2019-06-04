@@ -18,7 +18,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libmagick++-dev
 
 # scater and scran need updated rlang
-RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/rlang_0.3.1.tar.gz')"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.3.1.tar.gz')"
 
 RUN apt update && apt install -y dirmngr curl bash
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
@@ -47,7 +47,7 @@ RUN apt update && apt install -y fastqc
 ENV PACKAGES git gcc make g++ libboost-all-dev liblzma-dev libbz2-dev \
    ca-certificates zlib1g-dev curl unzip autoconf
 
-ENV SALMON_VERSION 0.12.0
+ENV SALMON_VERSION 0.14.0
 
 # salmon binary will be installed in /home/salmon/bin/salmon
 # don't modify things below here for version updates etc.
@@ -72,3 +72,26 @@ RUN curl -k -L https://github.com/COMBINE-lab/salmon/archive/v${SALMON_VERSION}.
     mkdir build && \
     cd build && \
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local && make && make install
+
+# fastp 
+RUN git clone https://github.com/OpenGene/fastp.git
+RUN cd fastp && \
+    make && \
+    sudo make install
+
+WORKDIR /home
+
+# bedtools
+RUN wget https://github.com/arq5x/bedtools2/releases/download/v2.28.0/bedtools-2.28.0.tar.gz
+RUN tar -zxvf bedtools-2.28.0.tar.gz
+RUN cd bedtools2 && \
+    make && \
+    mv bin/* /usr/local/bin
+
+# MashMap
+RUN wget https://github.com/marbl/MashMap/releases/download/v2.0/mashmap-Linux64-v2.0.tar.gz
+RUN tar -zxvf mashmap-Linux64-v2.0.tar.gz
+RUN cd mashmap-Linux64-v2.0 && \
+    mv mashmap /usr/local/bin
+
+
