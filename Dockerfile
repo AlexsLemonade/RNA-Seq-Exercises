@@ -94,4 +94,7 @@ RUN tar -zxvf mashmap-Linux64-v2.0.tar.gz
 RUN cd mashmap-Linux64-v2.0 && \
     mv mashmap /usr/local/bin
 
+# MultiQC
+RUN apt update && apt install -y python-pip
+RUN pip install multiqc
 
