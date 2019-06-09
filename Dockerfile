@@ -6,27 +6,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install dialog apt-utils -y
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  build-essential \
-  libxml2-dev \
-  libsqlite-dev \
-  libmariadbd-dev \
-  libmariadbclient-dev \
-  libmariadb-client-lgpl-dev \
-  libpq-dev \
-  libssh2-1-dev \
-  pandoc \
-  libmagick++-dev
+    build-essential \
+    libxml2-dev \
+    libsqlite-dev \
+    libmariadbd-dev \
+    libmariadbclient-dev \
+    libmariadb-client-lgpl-dev \
+    libpq-dev \
+    libssh2-1-dev \
+    pandoc \
+    libmagick++-dev \
+    time
 
 # scater and scran need updated rlang
 RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.3.1.tar.gz')"
 
 RUN apt update && apt install -y dirmngr curl bash
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  && install2.r --error \
-  --deps TRUE \
-  rjson \
-  ggpubr \
-  Rtsne
+    && install2.r --error \
+    --deps TRUE \
+    rjson \
+    ggpubr \
+    Rtsne
 
 RUN R -e "BiocManager::install(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'org.Mm.eg.db', 'org.Cf.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), update = FALSE)" 
 
@@ -45,7 +46,7 @@ RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad
 RUN apt update && apt install -y fastqc
 
 ENV PACKAGES git gcc make g++ libboost-all-dev liblzma-dev libbz2-dev \
-   ca-certificates zlib1g-dev curl unzip autoconf
+    ca-certificates zlib1g-dev curl unzip autoconf
 
 ENV SALMON_VERSION 0.14.0
 
