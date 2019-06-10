@@ -66,7 +66,7 @@ When that has finished extraction, you should see `ccdl_training_rnaseq.tar` on 
 ```
 cd Desktop
 ```
-4. You can load the Docker image with `docker load`:
+5. You can load the Docker image with `docker load`:
 
 ```
 docker load -i ccdl_training_rnaseq.tar
@@ -74,7 +74,7 @@ docker load -i ccdl_training_rnaseq.tar
 
 This will take a minute.
 
-5. When this step completes, check that it was successful with:
+6. When this step completes, check that it was successful with:
 
 ```
 docker images
@@ -84,7 +84,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-chicago        19c5bb6657d3        3 days ago          5.28GB
+ccdl/training_rnaseq               2019-chicago        19c5bb6657d3        3 days ago          4.82GB
 ```
 
 _Note that the created field may not match._
