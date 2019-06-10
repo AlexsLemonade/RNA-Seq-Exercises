@@ -48,7 +48,7 @@ RUN apt update && apt install -y fastqc
 ENV PACKAGES git gcc make g++ libboost-all-dev liblzma-dev libbz2-dev \
     ca-certificates zlib1g-dev curl unzip autoconf
 
-ENV SALMON_VERSION 0.14.0
+ENV SALMON_VERSION 0.13.1
 
 # salmon binary will be installed in /home/salmon/bin/salmon
 # don't modify things below here for version updates etc.
