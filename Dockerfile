@@ -6,27 +6,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install dialog apt-utils -y
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  build-essential \
-  libxml2-dev \
-  libsqlite-dev \
-  libmariadbd-dev \
-  libmariadbclient-dev \
-  libmariadb-client-lgpl-dev \
-  libpq-dev \
-  libssh2-1-dev \
-  pandoc \
-  libmagick++-dev
+    build-essential \
+    libxml2-dev \
+    libsqlite-dev \
+    libmariadbd-dev \
+    libmariadbclient-dev \
+    libmariadb-client-lgpl-dev \
+    libpq-dev \
+    libssh2-1-dev \
+    pandoc \
+    libmagick++-dev \
+    time
 
 # scater and scran need updated rlang
-RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/rlang_0.3.1.tar.gz')"
+RUN R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.3.1.tar.gz')"
 
 RUN apt update && apt install -y dirmngr curl bash
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  && install2.r --error \
-  --deps TRUE \
-  rjson \
-  ggpubr \
-  Rtsne
+    && install2.r --error \
+    --deps TRUE \
+    rjson \
+    ggpubr \
+    Rtsne
 
 RUN R -e "BiocManager::install(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'org.Mm.eg.db', 'org.Cf.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), update = FALSE)" 
 
@@ -45,9 +46,9 @@ RUN R -e "devtools::install_github('clauswilke/colorblindr', ref = '1ac3d4d62dad
 RUN apt update && apt install -y fastqc
 
 ENV PACKAGES git gcc make g++ libboost-all-dev liblzma-dev libbz2-dev \
-   ca-certificates zlib1g-dev curl unzip autoconf
+    ca-certificates zlib1g-dev curl unzip autoconf
 
-ENV SALMON_VERSION 0.12.0
+ENV SALMON_VERSION 0.13.1
 
 # salmon binary will be installed in /home/salmon/bin/salmon
 # don't modify things below here for version updates etc.
@@ -72,3 +73,29 @@ RUN curl -k -L https://github.com/COMBINE-lab/salmon/archive/v${SALMON_VERSION}.
     mkdir build && \
     cd build && \
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local && make && make install
+
+# fastp 
+RUN git clone https://github.com/OpenGene/fastp.git
+RUN cd fastp && \
+    make && \
+    sudo make install
+
+WORKDIR /home
+
+# bedtools
+RUN wget https://github.com/arq5x/bedtools2/releases/download/v2.28.0/bedtools-2.28.0.tar.gz
+RUN tar -zxvf bedtools-2.28.0.tar.gz
+RUN cd bedtools2 && \
+    make && \
+    mv bin/* /usr/local/bin
+
+# MashMap
+RUN wget https://github.com/marbl/MashMap/releases/download/v2.0/mashmap-Linux64-v2.0.tar.gz
+RUN tar -zxvf mashmap-Linux64-v2.0.tar.gz
+RUN cd mashmap-Linux64-v2.0 && \
+    mv mashmap /usr/local/bin
+
+# MultiQC
+RUN apt update && apt install -y python-pip
+RUN pip install multiqc
+
