@@ -15,13 +15,13 @@ Here is the [schedule](schedule.md) for the workshop.
 
   In your respective command line interface, copy and paste the following:
 ```
-docker pull ccdl/training_rnaseq:2019-houston
+docker pull ccdl/training_rnaseq:2019-chicago
 ```
 
 2. Run the container. Change the `<PASSWORD>` in the line below to whatever you'd
   like.
 ```
-docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-houston
+docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-chicago
 ```
 
 3. Open `Kitematic` - you should see an image running.
