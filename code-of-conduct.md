@@ -5,7 +5,7 @@ We value the involvement of everyone in the community. We are committed to creat
 
 To make clear what is expected, everyone participating in Childhood Cancer Data Lab (CCDL) training activities are required to conform to the Code of Conduct. This Code of Conduct applies to all spaces managed by the CCDL including, but not limited to, training workshops, email lists, and online forums such as GitHub, Slack and Twitter.
 
-If you at any time feel harassed or treated inappropriately please contact ccdl@alexslemonade.org.
+If you at any time feel harassed or treated inappropriately, please contact ccdl@alexslemonade.org.
 
 
 ## Code of Conduct
