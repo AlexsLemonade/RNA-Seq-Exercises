@@ -61,7 +61,7 @@ If all else fails and Kitematic is not working for you, go to your `Terminal` or
 replacing <PATH_TO_TRAINING_FOLDERS> bit with the absolute path to
 "main directory" that was transferred from the flash/hard drive.
 ```
-docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787
+docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-chicago
 ```
 After starting your container this way, you can get to the RStudio window in
 a similar way as described above:
