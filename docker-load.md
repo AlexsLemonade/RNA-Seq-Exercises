@@ -84,7 +84,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-chicago        19c5bb6657d3        3 days ago          4.82GB
+ccdl/training_rnaseq               2019-chicago        22f2b4f05051        3 days ago          5.28GB
 ```
 
 _Note that the created field may not match._
