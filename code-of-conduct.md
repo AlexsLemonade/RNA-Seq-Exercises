@@ -72,7 +72,7 @@ Examples of unacceptable behavior by participants at any CCDL training event/pla
 
 - publication of private communication without consent
 
-If you at any time feel harassed or treated inappropriately, please contact [ccdl@alexslemonade.org](ccdl@alexslemonade.org).
+If you feel harassed or treated inappropriately at any time, please contact the Director of the CCDL at [ccdl@alexslemonade.org](mailto:ccdl@alexslemonade.org)
 
 ### Consequences of Unacceptable behavior
 
@@ -80,6 +80,6 @@ Participants who are asked to stop any inappropriate behavior are expected to co
 This applies to any CCDL training events and platforms, either online or in-person.
 If a participant engages in behavior that violates this code of conduct, the organizers may warn the offender or require them to leave the event or platform.
 
-# License
+# Source
 
 This document is based on the code of conduct written by [The Carpentries](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html#code-of-conduct-detailed-view), which is adapted from the guidelines by the [Django Project](https://www.djangoproject.com/conduct/enforcement-manual/), which was itself based on the [Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports) template.
