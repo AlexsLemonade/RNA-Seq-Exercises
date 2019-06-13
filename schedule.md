@@ -11,7 +11,7 @@ Dates: 6/24/2019-6/26/2019
 | 10:15   | [Introduction to R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_r.nb.html)                                |
 | 11:00   | [R Intermediate Topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/02-intro_to_tidyverse.nb.html)      |
 | 11:45   | Introduction to Exercise: [Intro to R/Tidyverse](https://github.com/AlexsLemonade/training-modules/intro-to-R-tidyverse/03-intro_to_r_tidyverse_exercise.Rmd)      |
-| 12:00 PM     | Run Salmon for RNA-seq [Salmon and QC](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/01-qc_trim_quant.md)            |
+| 12:00 PM     | Processing for Bulk RNA-seq: [QC, trim, and quant](https://github.com/AlexsLemonade/training-modules/blob/master/RNA-seq/01-qc_trim_quant.md)            |
 | 12:30   | Lunch                                          |
 | 1:30      | Data Diagnostics w/ a Gastric Cancer Dataset [tximport](https://alexslemonade.github.io/training-modules/RNA-seq/02-gastric_cancer_tximport.nb.html), [Exploratory Analyses](https://alexslemonade.github.io/training-modules/RNA-seq/03-gastric_cancer_exploratory.nb.html) |
 | 3:00      | Break                                          |
