@@ -26,7 +26,7 @@ docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-chicago
 
 3. Open `Kitematic` - you should see an image running.
 
-4. `Settings` > `Volumes` > Set local folder to "main directory" that was
+4. `Settings` > `Volumes` > Set local folder to `training-modules` that was
 transferred from the flash/hard drive, using the `CHANGE` button.
 ![Folder](screenshots/all-02-volume.png)
 
