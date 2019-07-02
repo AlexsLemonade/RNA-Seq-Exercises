@@ -1,12 +1,17 @@
-# CCDL RNA-Seq-Exercises
+# CCDL RNA-Seq-Exercises: Set Up
 
 The [Childhood Cancer Data Lab](ccdatalab.org) is developing a series of short course modules to train researchers studying childhood cancer to perform reproducible analyses.
 
-This module focuses on the analysis of RNA-seq data.
-We structured this series to include one day on the analysis of a dataset selected by a course director, one day on the analysis of the participants own RNA-seq dataset, and a half-day to touch on some more advanced topics.
-Here is the [schedule](schedule.md) for the workshop.
+This module focuses on the analysis of RNA-seq data. Here is the
+[schedule](schedule.md) for the workshop.
 
-## Post-Docker Steps using Kitematic
+After you have successfully installed Docker, now you are ready to set up your
+Docker container. Working within this Docker container will provide you with all
+the software and packages you need for this workshop.These instructions will
+walk you through the set up of your Docker container. This should be the only time
+in this workshop you will need to install something.
+
+## Set up your Docker container
 
 1. Pull the appropriate image using command line.
 
