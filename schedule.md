@@ -1,6 +1,6 @@
 ## CZI CCDL Training
 
-**Location**: 601 Marshall St Redwood City, CA,   
+**Location**: 601 Marshall St Redwood City, CA, 94063  
 **Dates**: 9/3/2019 - 9/5/2019
 
 | Time        | Topic                                          |
