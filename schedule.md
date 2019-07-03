@@ -1,7 +1,7 @@
-## Chicago CCDL Training
+## CZI CCDL Training
 
-**Location**: 1 N Upper Wacker Dr, Chicago, Illinois 60606  
-**Dates**: 6/24/2019 - 6/26/2019
+**Location**: 601 Marshall St Redwood City, CA,   
+**Dates**: 9/3/2019 - 9/5/2019
 
 | Time        | Topic                                          |
 |-------------|------------------------------------------------|
