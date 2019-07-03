@@ -5,12 +5,10 @@ The [Childhood Cancer Data Lab](ccdatalab.org) is developing a series of short c
 This module focuses on the analysis of RNA-seq data. Here is the
 [schedule](schedule.md) for the workshop.
 
-After you have successfully installed the Docker program, now you are ready to
-set up your Docker container. Working within this Docker container will provide
-you with all the software and packages you need for this workshop. These
-instructions will walk you through the set up of your Docker container. This
-should be the only time in this workshop you will need to install something.
-
+After you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), now you are ready to set up your Docker container. Working within this Docker container will provide you with all
+the software and packages you need for this workshop. These instructions will
+walk you through the set up of your Docker container. This should be the only time
+in this workshop you will have to install something.
 ## Part 1: Set up Docker image using a copy from the flash drives
 
 1. Copy `ccdl_training_rnaseq.tar.gz` from the flash drives we have distributed to your Desktop folder
@@ -135,12 +133,14 @@ whatever you selected above (can also be accessed from the `Settings` >
 If you do not see the training modules folders in the kitematic folder, raise
 your hand.
 
-7. To test that everything is set up, type in the `Console` window the following
-command:
+7. To test that everything is set up, copy and paste the follow command in the R Studio `Console` window. You should receive an indication that you are successfully set up. Keep this screen handy for the instructors and helpers
+as they come around to check.
 
 ```
-source("kitematic/ready_script.R")
+source("kitematic/training-modules/ready_script.R")
 ```
+
+![Ready](screenshorts/ready_command.png)
 
 ### If Kitematic doesn't work:
 
