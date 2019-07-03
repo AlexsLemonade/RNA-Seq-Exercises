@@ -1,4 +1,4 @@
-# CCDL RNA-Seq-Exercises: Set Up
+# Docker Container Set Up
 
 The [Childhood Cancer Data Lab](ccdatalab.org) is developing a series of short course modules to train researchers studying childhood cancer to perform reproducible analyses.
 
@@ -9,9 +9,13 @@ After you have successfully installed [Docker](https://github.com/AlexsLemonade/
 the software and packages you need for this workshop. These instructions will
 walk you through the set up of your Docker container. This should be the only time
 in this workshop you will have to install something.
+
 ## Part 1: Set up Docker image using a copy from the flash drives
 
-1. Copy `ccdl_training_rnaseq.tar.gz` from the flash drives we have distributed to your Desktop folder
+1. Be sure that you have copied `ccdl_training_rnaseq.tar.gz` from the flash drive
+as was instructed in [these steps](flashdrive-instructions.md). If you do not
+have this file yet, follow [those instructions](flashdrive-instructions.md) before
+attempting to complete these next steps.
 
 ### Next steps
 

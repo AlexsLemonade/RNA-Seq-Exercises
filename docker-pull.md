@@ -1,4 +1,4 @@
-# CCDL RNA-Seq-Exercises: Set Up
+# Docker Container Set Up
 
 This module focuses on the analysis of RNA-seq data. Here is the
 [schedule](schedule.md) for the workshop.
