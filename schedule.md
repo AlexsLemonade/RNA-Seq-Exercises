@@ -31,7 +31,7 @@
 | 3:30        | Machine Learning: [Data Preparation](https://alexslemonade.github.io/training-modules/machine-learning/01-medulloblastoma_data_prep.nb.html), [Clustering](https://alexslemonade.github.io/training-modules/machine-learning/02-medulloblastoma_clustering.nb.html), [PLIER](https://alexslemonade.github.io/training-modules/machine-learning/03-medulloblastoma_PLIER.nb.html), [Differential PLIER LVs](https://alexslemonade.github.io/training-modules/machine-learning/04-medulloblastoma_LV_differences.nb.html)  
 | 4:45        | Exercise Introduction: [Machine Learning](https://github.com/AlexsLemonade/training-modules/blob/master/machine-learning/05-machine_learning_exercise.Rmd)                                            |
 | 5:00        | End                                           |
-| 6:00        | Dinner at [The Berghoff](https://www.theberghoff.com/the-berghoff-restaurant-menu)                                 |
+| 6:00        | Dinner at TBD                                 |
 |             |                                                |
 | **Day 3**   |                                                |
 | 9:00 AM     | Analyze your own data (or some stuff we have)!                         |
