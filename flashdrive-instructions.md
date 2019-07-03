@@ -1,4 +1,4 @@
-# Getting data from Flash drives
+# Getting Workshop Data from Flash Drives
 
 Before starting these steps, you will want to be sure you have **50-60 GB** of free
 space on your computer.
