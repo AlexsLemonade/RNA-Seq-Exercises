@@ -1,11 +1,11 @@
 # Docker Container Set Up
 
-This module focuses on the analysis of RNA-seq data. Here is the
-[schedule](schedule.md) for the workshop.
+If you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md),
+and have copied the files from the [flash drive](flashdrive-instructions.md)
+you are now ready for the last part of set up: setting up your Docker container.   
 
-After you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), now you are ready to set up your Docker container. Working within this Docker container will provide you with all
-the software and packages you need for this workshop. These instructions will
-walk you through the set up of your Docker container.
+Setting up your Docker container as described by following these steps, will
+provide you with all the software and packages you need for this workshop.
 
 ## Set up your Docker container
 

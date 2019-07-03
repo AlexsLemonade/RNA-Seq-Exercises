@@ -1,13 +1,11 @@
 # Docker Container Set Up
 
-The [Childhood Cancer Data Lab](ccdatalab.org) is developing a series of short course modules to train researchers studying childhood cancer to perform reproducible analyses.
+If you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md),
+and have [copied the files from the flash drive](flashdrive-instructions.md),
+you are now ready for the last part of set up: setting up your Docker container.   
 
-This module focuses on the analysis of RNA-seq data. Here is the
-[schedule](schedule.md) for the workshop.
-
-After you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), now you are ready to set up your Docker container. Working within this Docker container will provide you with all
-the software and packages you need for this workshop. These instructions will
-walk you through the set up of your Docker container.
+Setting up your Docker container as described by following these steps, will
+provide you with all the software and packages you need for this workshop.
 
 ## Part 1: Set up Docker image using a copy from the flash drives
 
