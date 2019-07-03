@@ -7,7 +7,7 @@ you are now ready for the last part of set up: setting up your Docker container.
 Setting up your Docker container as described by following these steps, will
 provide you with all the software and packages you need for this workshop.
 
-## Part 1: Set up Docker image using a copy from the flash drives
+## Part 1: Get the Docker image using a copy from the flash drives
 
 1. Be sure that you have copied `ccdl_training_rnaseq.tar.gz` from the flash drive
 as was instructed in [these steps](flashdrive-instructions.md). If you do not

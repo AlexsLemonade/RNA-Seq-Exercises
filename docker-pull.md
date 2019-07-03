@@ -7,8 +7,6 @@ you are now ready for the last part of set up: setting up your Docker container.
 Setting up your Docker container as described by following these steps, will
 provide you with all the software and packages you need for this workshop.
 
-## Set up your Docker container
-
 1. Pull the appropriate image using command line.
 
 - In *Mac*, search for and open `Terminal`.
