@@ -26,7 +26,7 @@ docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 3. Open `Kitematic` - you should see an image running.
 
 4. `Settings` > `Volumes` > Set local folder to `training-modules` that was
-transferred from the flash/hard drive, using the `CHANGE` button.
+transferred from the flash drive, using the `CHANGE` button.
 ![Folder](screenshots/all-02-volume.png)
 
 *For Windows*: After you set `Volumes` you will may see a message in the
@@ -69,8 +69,8 @@ to check.
 
 If all else fails and Kitematic is not working for you, go to your `Terminal` or
 `Command Prompt` (for Mac or Windows respectively) and type in the following, but
-replacing <PATH_TO_TRAINING_FOLDERS> bit with the absolute path to
-"main directory" that was transferred from the flash/hard drive.
+replace <PATH_TO_TRAINING_FOLDERS> with the absolute path to
+`training-modules` that was transferred from the flash drive.
 ```
 docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
@@ -82,4 +82,4 @@ a similar way as described above:
   `IPv4 Address`. Copy and paste it.
   Put that number and `:8787` at the end of it in your browser.
 
-Resume with step 6 and 7.
+Resume with step 5.

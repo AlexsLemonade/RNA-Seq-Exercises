@@ -16,8 +16,8 @@ attempting to complete these next steps.
 
 ### Next steps
 
-* [Mac OS X and Linux](#mac-os-x-and-linux)
-* [Windows 10 Pro](#windows-10-pro)
+* [Mac OS X and Linux](#next-steps-for-mac-os-x-and-linux-users)
+* [Windows 10 Pro](#next-steps-for-windows-10-pro-users)
 
 #### Next steps for Mac OS X and Linux users
 
@@ -53,7 +53,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-czi        22f2b4f05051        3 days ago          5.28GB
+ccdl/training_rnaseq               2019-czi        <TODO:IMAGE_ID>        3 days ago          5.28GB
 ```
 
 _Note that the created field may not match._
@@ -91,7 +91,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-czi        22f2b4f05051        3 days ago          5.28GB
+ccdl/training_rnaseq               2019-czi        <TODO:IMAGE_ID>        3 days ago          5.28GB
 ```
 _Note that the created field may not match._
 
@@ -107,7 +107,7 @@ docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 2. Open `Kitematic` - you should see an image running.
 
 3. `Settings` > `Volumes` > Set local folder to `training-modules` that was
-transferred from the flash/hard drive, using the `CHANGE` button.
+transferred from the flash drive, using the `CHANGE` button.
 ![Folder](screenshots/all-02-volume.png)
 
 *For Windows*: After you set `Volumes` you will may see a message in the
@@ -127,8 +127,7 @@ Enter your password and click `OK`.
     `localhost:8787` in your web browser
 
 5. Log into `RStudio`. The username will be 'rstudio' and the password will be
-whatever you selected above (can also be accessed from the `Settings` >
-`General` panel).
+whatever you selected above (can also be accessed from the `Settings` > `General` panel).
 
 6. You should see a `kitematic/` folder in your `RStudio` Files panel. Click on it.
 If you do not see the training modules folders in the kitematic folder, raise
@@ -151,8 +150,8 @@ around to check.
 
 If all else fails and Kitematic is not working for you, go to your `Terminal` or
 `Command Prompt` (for Mac or Windows respectively) and type in the following, but
-replacing <PATH_TO_TRAINING_FOLDERS> bit with the absolute path to
-"main directory" that was transferred from the flash/hard drive.
+replace <PATH_TO_TRAINING_FOLDERS> with the absolute path to
+`training-modules` that was transferred from the flash drive.
 ```
 docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
@@ -164,4 +163,4 @@ a similar way as described above:
   `IPv4 Address`. Copy and paste it.
   Put that number and `:8787` at the end of it in your browser.
 
-Resume with step 6 and 7.
+Resume with step 4 of part 2.
