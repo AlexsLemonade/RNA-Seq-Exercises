@@ -4,7 +4,7 @@ If you have successfully installed [Docker](https://github.com/AlexsLemonade/tra
 and have copied the files from the [flash drive](flashdrive-instructions.md)
 you are now ready for the last part of set up: setting up your Docker container.   
 
-Setting up your Docker container as described by following these steps, will
+Setting up your Docker container as described by these steps, will
 provide you with all the software and packages you need for this workshop.
 
 1. Pull the appropriate image using command line.
