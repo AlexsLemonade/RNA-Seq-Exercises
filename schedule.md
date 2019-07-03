@@ -1,12 +1,13 @@
-## Chicago CCDL Training
+## CZI CCDL Training
 
-**Location**: 1 N Upper Wacker Dr, Chicago, Illinois 60606  
-**Dates**: 6/24/2019 - 6/26/2019
+**Location**: 601 Marshall St Redwood City, CA, 94063  
+**Dates**: 9/3/2019 - 9/5/2019
 
 | Time        | Topic                                          |
 |-------------|------------------------------------------------|
 | **Day 1**   |                                                |
-| 9:00 AM     | Welcome & Getting Started: ([Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), [Prepare the RNA-seq Environment](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/README.md), Introduction to RStudio)
+| 9:00 AM     | Welcome                                        |
+| 9:10        | Getting Started: [Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), [Get files from flash drives](flashdrive-instructions.md), [Docker container set up](docker-pull.md) |
 | 10:00       | Break                                            |
 | 10:15       | [Introduction to R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_r.nb.html)                                |
 | 11:00       | [R Intermediate Topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/02-intro_to_tidyverse.nb.html)      |
@@ -30,7 +31,7 @@
 | 3:30        | Machine Learning: [Data Preparation](https://alexslemonade.github.io/training-modules/machine-learning/01-medulloblastoma_data_prep.nb.html), [Clustering](https://alexslemonade.github.io/training-modules/machine-learning/02-medulloblastoma_clustering.nb.html), [PLIER](https://alexslemonade.github.io/training-modules/machine-learning/03-medulloblastoma_PLIER.nb.html), [Differential PLIER LVs](https://alexslemonade.github.io/training-modules/machine-learning/04-medulloblastoma_LV_differences.nb.html)  
 | 4:45        | Exercise Introduction: [Machine Learning](https://github.com/AlexsLemonade/training-modules/blob/master/machine-learning/05-machine_learning_exercise.Rmd)                                            |
 | 5:00        | End                                           |
-| 6:00        | Dinner at [The Berghoff](https://www.theberghoff.com/the-berghoff-restaurant-menu)                                 |
+| 6:00        | Dinner at TBD                                 |
 |             |                                                |
 | **Day 3**   |                                                |
 | 9:00 AM     | Analyze your own data (or some stuff we have)!                         |
