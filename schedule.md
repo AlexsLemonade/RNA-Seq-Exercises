@@ -7,7 +7,7 @@
 |-------------|------------------------------------------------|
 | **Day 1**   |                                                |
 | 9:00 AM     | Welcome                                        |
-| 9:10        | Getting Started: [Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), [Get files from flashdrives](flashdrive-instructions.md), [Docker container set up](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/docker-pull.md) |
+| 9:10        | Getting Started: [Install Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), [Get files from flashdrives](flashdrive-instructions.md), [Docker container set up](docker-pull.md) |
 | 10:00       | Break                                            |
 | 10:15       | [Introduction to R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_r.nb.html)                                |
 | 11:00       | [R Intermediate Topics (including tidyverse)](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/02-intro_to_tidyverse.nb.html)      |
