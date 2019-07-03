@@ -133,14 +133,18 @@ whatever you selected above (can also be accessed from the `Settings` >
 If you do not see the training modules folders in the kitematic folder, raise
 your hand.
 
-7. To test that everything is set up, copy and paste the follow command in the R Studio `Console` window. You should receive an indication that you are successfully set up. Keep this screen handy for the instructors and helpers
-as they come around to check.
+7. To test that everything is set up, copy and paste the follow command in the
+R Studio `Console` window.
 
 ```
 source("kitematic/training-modules/ready_script.R")
 ```
 
-![Ready](screenshorts/ready_command.png)
+![Ready](screenshots/ready_command.png)
+
+8. Click `Enter`. You should receive an indication that you are successfully set
+up. Keep this screen handy for the instructors and helpers as they come around
+to check.
 
 ### If Kitematic doesn't work:
 

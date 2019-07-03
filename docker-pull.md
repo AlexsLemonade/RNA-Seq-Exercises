@@ -52,16 +52,21 @@ Enter your password and click `OK`.
 whatever you selected above (can also be accessed from the `Settings` >
 `General` panel).
 
-7. You should see a `kitematic/` folder in your `RStudio` Files panel. Click on it.
+7. You should see a `kitematic/` folder in your `RStudio` Files panel. Click on
+it.
 
-8. To test that everything is set up, copy and paste the follow command in the R Studio `Console` window. You should receive an indication that you are successfully set up. Keep this screen handy for the instructors and helpers
-as they come around to check.
+8. To test that everything is set up, copy and paste the follow command in the
+R Studio `Console` window.
 
 ```
 source("kitematic/training-modules/ready_script.R")
 ```
 
-![Ready](screenshorts/ready_command.png)
+![Ready](screenshots/ready_command.png)
+
+9. Click `Enter`. You should receive an indication that you are successfully set
+up. Keep this screen handy for the instructors and helpers as they come around
+to check.
 
 ### If Kitematic doesn't work:
 
