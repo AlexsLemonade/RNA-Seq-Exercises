@@ -58,7 +58,7 @@ ccdl/training_rnaseq               2019-czi        22f2b4f05051        3 days ag
 
 _Note that the created field may not match._
 
-#### Next steps Windows 10 Pro
+#### Next steps for Windows 10 Pro users
 
 Make sure you have 7-Zip installed.
 If you do not, you can download the `64-bit x64` program here: https://www.7-zip.org/
