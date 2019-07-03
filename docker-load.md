@@ -163,4 +163,4 @@ a similar way as described above:
   `IPv4 Address`. Copy and paste it.
   Put that number and `:8787` at the end of it in your browser.
 
-Resume with step 4 of part 2.
+Resume with step 5 of part 2.
