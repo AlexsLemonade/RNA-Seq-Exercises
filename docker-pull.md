@@ -5,7 +5,7 @@ This module focuses on the analysis of RNA-seq data. Here is the
 
 After you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md), now you are ready to set up your Docker container. Working within this Docker container will provide you with all
 the software and packages you need for this workshop. These instructions will
-walk you through the set up of your Docker container. 
+walk you through the set up of your Docker container.
 
 ## Set up your Docker container
 
@@ -16,13 +16,13 @@ walk you through the set up of your Docker container.
 
   In your respective command line interface, copy and paste the following:
 ```
-docker pull ccdl/training_rnaseq:2019-chicago
+docker pull ccdl/training_rnaseq:2019-czi
 ```
 
 2. Run the container. Change the `<PASSWORD>` in the line below to whatever you'd
   like.
 ```
-docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-chicago
+docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
 
 3. Open `Kitematic` - you should see an image running.
@@ -64,7 +64,7 @@ source("kitematic/ready_script.R")
 ![Ready](screenshots/ready_command.png)
 
 9. Click `Enter`. You should receive an indication that you are successfully set
-up. Keep this screen handy for the instructors and helpers as they come around
+up. Keep this indicator handy for the instructors and helpers as they come around
 to check.
 
 ### If Kitematic doesn't work:
@@ -74,7 +74,7 @@ If all else fails and Kitematic is not working for you, go to your `Terminal` or
 replacing <PATH_TO_TRAINING_FOLDERS> bit with the absolute path to
 "main directory" that was transferred from the flash/hard drive.
 ```
-docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-chicago
+docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
 After starting your container this way, you can get to the RStudio window in
 a similar way as described above:
