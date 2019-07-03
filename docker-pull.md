@@ -1,4 +1,4 @@
-# Docker Container Set Up
+# Docker Container Set Up - from Internet
 
 If you have successfully installed [Docker](https://github.com/AlexsLemonade/training-modules/blob/master/docker-install/README.md),
 and have copied the files from the [flash drive](flashdrive-instructions.md)
