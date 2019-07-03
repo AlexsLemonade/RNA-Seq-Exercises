@@ -137,7 +137,7 @@ your hand.
 R Studio `Console` window.
 
 ```
-source("kitematic/training-modules/ready_script.R")
+source("kitematic/ready_script.R")
 ```
 
 ![Ready](screenshots/ready_command.png)
