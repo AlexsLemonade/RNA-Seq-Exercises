@@ -53,7 +53,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-czi        <TODO:IMAGE_ID>        3 days ago          5.28GB
+ccdl/training_rnaseq               2019-czi            16eb55269eec        3 days ago          5.03GB
 ```
 
 _Note that the created field may not match._
@@ -91,7 +91,7 @@ You should see output like:
 
 ```
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
-ccdl/training_rnaseq               2019-czi        <TODO:IMAGE_ID>        3 days ago          5.28GB
+ccdl/training_rnaseq               2019-czi            16eb55269eec        3 days ago          5.03GB
 ```
 _Note that the created field may not match._
 
