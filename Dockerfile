@@ -27,7 +27,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     --deps TRUE \
     rjson \
     ggpubr \
-    Rtsne
+    Rtsne \
+    png
 
 RUN R -e "BiocManager::install(c('ensembldb', 'DESeq2', 'qvalue', 'org.Hs.eg.db', 'org.Dr.eg.db', 'org.Mm.eg.db', 'org.Cf.eg.db', 'ComplexHeatmap', 'ConsensusClusterPlus', 'scran', 'scater'), update = FALSE)" 
 
@@ -82,20 +83,6 @@ RUN cd fastp && \
 
 WORKDIR /home
 
-# bedtools
-RUN wget https://github.com/arq5x/bedtools2/releases/download/v2.28.0/bedtools-2.28.0.tar.gz
-RUN tar -zxvf bedtools-2.28.0.tar.gz
-RUN cd bedtools2 && \
-    make && \
-    mv bin/* /usr/local/bin
-
-# MashMap
-RUN wget https://github.com/marbl/MashMap/releases/download/v2.0/mashmap-Linux64-v2.0.tar.gz
-RUN tar -zxvf mashmap-Linux64-v2.0.tar.gz
-RUN cd mashmap-Linux64-v2.0 && \
-    mv mashmap /usr/local/bin
-
 # MultiQC
 RUN apt update && apt install -y python-pip
 RUN pip install multiqc
-
