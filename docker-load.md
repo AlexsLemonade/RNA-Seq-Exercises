@@ -104,7 +104,12 @@ _Note that the created field may not match._
 docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
 
-2. Open `Kitematic` - you should see an image running.
+2. Open `Kitematic` - you should see an image running. Docker assigns a random
+name to your container. In the example below: "stoic_lamport".
+If you don't see a container running, try quitting `Kitematic` and then opening it
+up again, or going to the toolbar > `View` > `Refresh Container List`.
+
+![](screenshots/container_running.png)
 
 3. `Settings` > `Volumes` > Set local folder to `training-modules` that was
 transferred from the flash drive, using the `CHANGE` button.
