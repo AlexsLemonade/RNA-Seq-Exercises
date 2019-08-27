@@ -23,7 +23,10 @@ docker pull ccdl/training_rnaseq:2019-czi
 docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 ```
 
-3. Open `Kitematic` - you should see an image running.
+3. Open `Kitematic` - you should see an image running. Docker assigns a random 
+name to your container. In the example below: "stoic_lamport".
+
+![](screenshots/container_running.png)
 
 4. `Settings` > `Volumes` > Set local folder to `training-modules` that was
 transferred from the flash drive, using the `CHANGE` button.
