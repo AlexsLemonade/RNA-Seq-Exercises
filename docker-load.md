@@ -107,7 +107,7 @@ docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
 2. Open `Kitematic` - you should see an image running. Docker assigns a random
 name to your container. In the example below: "stoic_lamport".
 If you don't see a container running, try quitting `Kitematic` and then opening it
-up again, or going to `View` > `Refresh Container List`.
+up again, or going to the toolbar > `View` > `Refresh Container List`.
 
 ![](screenshots/container_running.png)
 
