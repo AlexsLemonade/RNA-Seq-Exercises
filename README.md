@@ -1,6 +1,6 @@
 # CCDL RNA-Seq-Exercises
 
-The [Childhood Cancer Data Lab](ccdatalab.org) is developing a series of short course modules to train researchers studying childhood cancer to perform reproducible analyses.
+The [Childhood Cancer Data Lab](https://ccdatalab.org) is developing a series of short course modules to train researchers studying childhood cancer to perform reproducible analyses.
 
 This module focuses on the analysis of RNA-seq data. To set up your Docker
 RNA-seq environment, you need to follow the instructions specified in the [schedule](schedule.md)
