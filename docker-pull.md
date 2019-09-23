@@ -14,13 +14,13 @@ provide you with all the software and packages you need for this workshop.
 
   In your respective command line interface, copy and paste the following:
 ```
-docker pull ccdl/training_rnaseq:2019-czi
+docker pull ccdl/training_rnaseq:2019-philly
 ```
 
 2. Run the container. Change the `<PASSWORD>` in the line below to whatever you'd
   like.
 ```
-docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
+docker run -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-philly
 ```
 
 3. Open `Kitematic` - you should see an image running. Docker assigns a random
@@ -77,7 +77,7 @@ If all else fails and Kitematic is not working for you, go to your `Terminal` or
 replace <PATH_TO_TRAINING_FOLDERS> with the absolute path to
 `training-modules` that was transferred from the flash drive.
 ```
-docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-czi
+docker run -it --rm --mount type=volume,dst=/home/rstudio/kitematic,volume-driver=local,volume-opt=type=none,volume-opt=o=bind,volume-opt=device=<PATH_TO_TRAINING_FOLDERS> -e PASSWORD=<PASSWORD> -p 8787:8787 ccdl/training_rnaseq:2019-philly
 ```
 After starting your container this way, you can get to the RStudio window in
 a similar way as described above:
