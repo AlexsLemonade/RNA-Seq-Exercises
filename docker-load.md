@@ -60,20 +60,19 @@ _Note that the created field may not match._
 
 #### Next steps for Windows 10 Pro users
 
-Make sure you have 7-Zip installed.
-If you do not, you can download the `64-bit x64` program here: https://www.7-zip.org/
+2. Install 7-Zip install if you do not already have it by downloading the `64-bit x64` program here: https://www.7-zip.org/
 
-2. Right-click `ccdl_training_rnaseq.tar.gz`.
-3. Go to `7-Zip` and selected `Extract Here`.
+3. Right-click `ccdl_training_rnaseq.tar.gz`.
+4. Go to `7-Zip` and selected `Extract Here`.
 When that has finished extraction, you should see `ccdl_training_rnaseq.tar` on your Desktop.
 
-4. Open your `Command Prompt` application.
-5. Navigate to your `Desktop` directory with:
+5. Open your `Command Prompt` application.
+6. Navigate to your `Desktop` directory with:
 
 ```
 cd Desktop
 ```
-6. You can load the Docker image with `docker load`:
+7. You can load the Docker image with `docker load`:
 
 ```
 docker load -i ccdl_training_rnaseq.tar
@@ -81,7 +80,7 @@ docker load -i ccdl_training_rnaseq.tar
 
 This will take a minute.
 
-7. When this step completes, check that it was successful with:
+8. When this step completes, check that it was successful with:
 
 ```
 docker images
